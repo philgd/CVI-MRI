@@ -15,10 +15,6 @@ Software:
   1. FSL (https://fsl.fmrib.ox.ac.uk/fsl/fslwiki)
   2. MatLab (https://www.mathworks.com/products/matlab.html)
 
-Code included from other projects:
-  1. Nifti library for MATLAB (https://au.mathworks.com/matlabcentral/fileexchange/8797-tools-for-nifti-and-analyze-image)
-  2. fspecial3 (https://au.mathworks.com/matlabcentral/fileexchange/21130-dti-and-fiber-tracking/content/fspecial3.m)
-
 ## Instructions for use
 
 1. Get code and data
@@ -46,3 +42,8 @@ Code included from other projects:
   - To prepare subjects for training
 2. ComputePriors.sh
   - To calculate atlas and weights from training data
+
+### Code included from other projects:
+
+1. Nifti library for MATLAB (https://au.mathworks.com/matlabcentral/fileexchange/8797-tools-for-nifti-and-analyze-image)
+2. fspecial3 (https://au.mathworks.com/matlabcentral/fileexchange/21130-dti-and-fiber-tracking/content/fspecial3.m)
