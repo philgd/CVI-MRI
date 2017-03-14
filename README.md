@@ -21,18 +21,24 @@ Code included from other projects:
 
 ## Instructions for use
 
-1. Arrange data
-  1. Prefix data and transforms with subject-id
-  2. Place input data in TrainingData folder (SWI, QSM, Vein, Mask)
-  3. Place linear (and/or non-linear) transforms into Transform folder
+1. Get code and data
+  1. Clone git repository into working directory
+  1. Download TrainingData.tar.gz and Transforms.tar.gz from https://doi.org/10.4225/03/57B6AB25DDBDC
+  2. Extract both archives into working directory
   
 2. Prepare data:
   1. Execute ./AddTraining.sh subject-id
+  2. Repeat for each subject-id (1-10 in provided data)
   
 3. Calculate priors:
-  1. Add subject ID to line 31 in ComputePriors.sh
-  2. Add transform as linear or non-linear to line 32 in ComputePriors.sh
-  3. Execute ./ComputePriors.sh
+  1. Execute ./ComputePriors.sh
+  
+4. Add new datasets (optional)
+  1. Prefix data and transforms with subject-id
+  2. Place input data in TrainingData folder (SWI, QSM, Vein, Mask)
+  3. Place linear (and/or non-linear) transforms into Transform folder
+  4. Add subject ID to line 31 in ComputePriors.sh
+  5. Specfic transform as linear or non-linear to line 32 in ComputePriors.sh
 
 ### Main functions
 
