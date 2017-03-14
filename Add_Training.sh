@@ -21,13 +21,17 @@ function User_Check {
 
 # Input files
 out_prefix=$1
-swi=$(pwd)/TrainingData/$out_prefix'_SWI.nii.gz'
-qsm=$(pwd)/TrainingData/$out_prefix'_QSM.nii.gz'
-vein=$(pwd)/TrainingData/$out_prefix'_Vein.nii.gz'
-mask=$(pwd)/TrainingData/$out_prefix'_Mask.nii.gz'
+td_dir=$(pwd)/TrainingData
+swi=$td_dir/$out_prefix'_SWI.nii.gz'
+qsm=$td_dir/$out_prefix'_QSM.nii.gz'
+vein=$td_dir/$out_prefix'_Vein.nii.gz'
+mask=$td_dir/$out_prefix'_Mask.nii.gz'
+tf_dir=$(pwd)/Transforms
 std_l=$tf_dir/$out_prefix'_ToStd.mat'
 std_nl=$tf_dir/$out_prefix'_ToStd.nii.gz'
-tf_dir=$(pwd)/Transforms
+
+# Prior dir
+out_dir=$(pwd)/Priors
 
 # Atlas
 std_brain=$FSLDIR/data/standard/MNI152_T1_1mm_brain.nii.gz
@@ -38,9 +42,6 @@ out_vein_l=$out_dir/$out_prefix'_Vein_Std_L.nii.gz'
 out_vein_nl=$out_dir/$out_prefix'_Vein_Std_NL.nii.gz'
 out_sub_nl=$tf_dir/$out_prefix'_ToSub.nii.gz'
 out_sub_l=$tf_dir/$out_prefix'_ToSub.mat'
-
-# Prior dir
-out_dir=$(pwd)/Priors
 
 # Temp dir
 temp_dir=$(pwd)/Temp_$out_prefix
