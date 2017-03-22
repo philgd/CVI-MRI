@@ -27,7 +27,7 @@ swiP = swiP(:,2);
 
 % qsm seed and mask excluding more surface (could improve using STI mask)
 % but still need to calculate posterior on dilated mask
-trainingMaskQSM = imerode(trainingMask,ball(4))==1;
+trainingMaskQSM = trainingMask;% imerode(trainingMask,ball(4))==1;
 seed = 1+(qsm(trainingMaskQSM(:))>0.05);
 
 % fit qsm gmm and calculate posterior
