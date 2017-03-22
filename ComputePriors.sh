@@ -19,8 +19,8 @@ sc_dir=$(pwd)/MATLAB
 base_dir=$(pwd)
 
 # Atlas
-std_brain=$FSLDIR/data/standard/MNI152_T1_1mm_brain.nii.gz
-std_mask=$FSLDIR/data/standard/MNI152_T1_1mm_brain_mask.nii.gz
+std_brain=$FSLDIR/data/standard/MNI152_T1_0.5mm.nii.gz
+#std_mask=$FSLDIR/data/standard/MNI152_T1_1mm_brain_mask.nii.gz
 
 # Subjects (To only use linear interpolation where non-linear was unsuitable/failed/unavailable)
 sub_array=(1  2  3  4  5  6  7  8  9  10)

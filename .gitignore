@@ -3,3 +3,5 @@ Transforms/*
 Priors/*
 Temp*/
 *.swp
+TrainingData.tar.gz
+Transforms.tar.gz

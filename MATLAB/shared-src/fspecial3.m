@@ -49,7 +49,7 @@ function h = fspecial3(type,siz,sig)
 %
 %   -- Damien Garcia -- 2007/08
 
-error(nargchk(1,3,nargin))
+%error(narginchk(1,3))
 type = lower(type);
 
 if nargin==1

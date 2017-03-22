@@ -34,8 +34,8 @@ std_nl=$tf_dir/$out_prefix'_ToStd.nii.gz'
 out_dir=$(pwd)/Priors
 
 # Atlas
-std_brain=$FSLDIR/data/standard/MNI152_T1_1mm_brain.nii.gz
-std_mask=$FSLDIR/data/standard/MNI152_T1_1mm_brain_mask.nii.gz
+std_brain=$FSLDIR/data/standard/MNI152_T1_0.5mm.nii.gz
+#std_mask=$FSLDIR/data/standard/MNI152_T1_0.5mm_brain_mask.nii.gz
 
 # Output
 out_vein_l=$out_dir/$out_prefix'_Vein_Std_L.nii.gz'
