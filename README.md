@@ -17,24 +17,21 @@ Software:
 
 ## Instructions for use
 
-1. Get code and data
-  1. Clone git repository into working directory
-  1. Download TrainingData.tar.gz and Transforms.tar.gz from https://doi.org/10.4225/03/57B6AB25DDBDC
-  2. Extract both archives into working directory
+1. Create a working directory (e.g. mkdir ~/CVI-MRI/)
+2. Clone git repository into working directory (git clone https://github.com/philgd/CVI-MRI.git)
+3. Download TrainingData.tar.gz and Transforms.tar.gz from https://doi.org/10.4225/03/57B6AB25DDBDC
+4. Extract the two .tar.gz files into the working directory.
+5. Run main script (./RunAll.sh)
+
+Output data includes the template priors and the CV images. CV images can be found in the 'Output/' directory. Template priors can be found in 'Priors/' directory.
+
+### Optional: Add new datasets
   
-2. Prepare data:
-  1. Execute ./AddTraining.sh subject-id
-  2. Repeat for each subject-id (1-10 in provided data)
-  
-3. Calculate priors:
-  1. Execute ./ComputePriors.sh
-  
-4. Add new datasets (optional)
-  1. Prefix data and transforms with subject-id
-  2. Place input data in TrainingData folder (SWI, QSM, Vein, Mask)
-  3. Place linear (and/or non-linear) transforms into Transform folder
-  4. Add subject ID to line 31 in ComputePriors.sh
-  5. Specfic transform as linear or non-linear to line 32 in ComputePriors.sh
+1. Prefix data and transforms with subject-id
+2. Place input data in TrainingData folder (SWI, QSM, Vein, Mask)
+3. Place linear (and/or non-linear) transforms into Transform folder
+4. Add subject ID to line 31 in ComputePriors.sh
+5. Specfic transform as linear or non-linear to line 32 in ComputePriors.sh
 
 ### Main functions
 
