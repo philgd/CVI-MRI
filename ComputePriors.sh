@@ -14,6 +14,7 @@ function User_Check {
 # Directories
 tr_dir=$(pwd)/TrainingData
 pr_dir=$(pwd)/Priors
+cv_dir=$(pwd)/Output
 tf_dir=$(pwd)/Transforms
 sc_dir=$(pwd)/MATLAB
 base_dir=$(pwd)
@@ -142,6 +143,24 @@ for (( i=0; i<${#sub_array[@]}; i++ )); do
 		applywarp --ref=$swi --in=$temp_sll --out=$sll_sub --warp=$sub_nl
 		applywarp --ref=$swi --in=$temp_qll --out=$qll_sub --warp=$sub_nl
 	fi
+
+	# Calculate CVI image for each subject
+	
+	# Inputs
+	swi=$tr_dir/$out_prefix'_SWI.nii.gz'
+	qsm=$tr_dir/$out_prefix'_QSM.nii.gz'
+	mask=$tr_dir/$out_prefix'_Mask.nii.gz'
+	fre_sub=$pr_dir/$out_prefix'_Fre_Sub.nii.gz'
+	fll_sub=$pr_dir/$out_prefix'_Fre_Prior.nii.gz'
+	sll_sub=$pr_dir/$out_prefix'_SWI_Prior.nii.gz'
+	qll_sub=$pr_dir/$out_prefix'_QSM_Prior.nii.gz'	
+	
+	# Output
+	cv=$cv_dir/$out_prefix'_CVI.nii.gz'
+	
+	cd $sc_dir
+	matlab -nodesktop -nosplash -nodisplay -r "CVI('$mask','$swi','$qsm','$fre_sub','$sll_sub','$qll_sub','$fll_sub','$cv'); quit;"
+
 	echo "Subject specific priors " $(($i+1)) "/" ${#sub_array[@]}
 done
 

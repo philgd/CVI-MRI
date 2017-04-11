@@ -2,6 +2,7 @@
 
 
 mkdir Priors
+mkdir Output
 
 ./AddTraining.sh 1 
 ./AddTraining.sh 2 
@@ -13,7 +14,6 @@ mkdir Priors
 ./AddTraining.sh 8 
 ./AddTraining.sh 9 
 ./AddTraining.sh 10
-
 
 ./ComputePriors.sh
 
