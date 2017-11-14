@@ -3,11 +3,16 @@ Composite vein imaging for susceptibility-based magnetic resonance imaging.
 
 A set of tools for generating composite vein images from SWI and QSM images.
 
+Details of the method are available here:
+
+*Phillip G.D. Ward, Nicholas J. Ferris, Parnesh Raniga, David L. Dowe, Amanda C.L. Ng, David G. Barnes, Gary F. Egan, Combining images and anatomical knowledge to improve automated vein segmentation in MRI, NeuroImage, Volume 165, 15 January 2018, Pages 294-305, ISSN 1053-8119, https://doi.org/10.1016/j.neuroimage.2017.10.049.
+(https://www.sciencedirect.com/science/article/pii/S1053811917308765)
+
 Training data for priors and atlas are available at: 
 
-*Ward, Phil; Ferris, Nicholas J.; Raniga, Parnesh; Ng, Amanda C. L.; Dowe, David L.; Barnes, David; F. Egan, Gary (2016): Combined magnetic susceptibility contrast for vein segmentation from a single MRI acquisition using a vein frequency atlas (vein priors and frequency atlas).. figshare. https://doi.org/10.4225/03/57B6AB25DDBDC*
+*Phillip G.D. Ward, Nicholas J. Ferris, Parnesh Raniga, David L. Dowe, Amanda C.L. Ng, David G. Barnes, Gary F. Egan, Combined magnetic susceptibility contrast for vein segmentation from a single MRI acquisition using a vein frequency atlas (vein priors and frequency atlas). figshare. 2017. https://doi.org/10.4225/03/57B6AB25DDBDC*
 
-A publication detailing the methods used is currently in draft, and a preliminary report has been accepted for presentation at the 2017 Annual Meeting of the International Society for Magnetic Resonance in Medicine (ISMRM), abstract # 1450.
+Please cite both the methods paper and data repository when using this code.
 
 ## Requirements
 
