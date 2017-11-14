@@ -6,7 +6,7 @@ A set of tools for generating composite vein images from SWI and QSM images.
 Details of the method are available here:
 
 *Phillip G.D. Ward, Nicholas J. Ferris, Parnesh Raniga, David L. Dowe, Amanda C.L. Ng, David G. Barnes, Gary F. Egan, Combining images and anatomical knowledge to improve automated vein segmentation in MRI, NeuroImage, Volume 165, 15 January 2018, Pages 294-305, ISSN 1053-8119, https://doi.org/10.1016/j.neuroimage.2017.10.049.
-(https://www.sciencedirect.com/science/article/pii/S1053811917308765)
+(https://www.sciencedirect.com/science/article/pii/S1053811917308765)*
 
 Training data for priors and atlas are available at: 
 
